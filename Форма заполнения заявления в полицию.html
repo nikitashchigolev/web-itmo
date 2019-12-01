@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<h1 style="text-align: center;">Форма заполнения заявления в полицию</h1>
+		<form action="/servlet" method="get" name="Form">
+			<h3><span style="color: red">Куда адресовано</span></h3>
+			<div style="padding: 10px; border: 1px solid">
+				Подразделение:
+					<select name="unit">
+						<option value="MIA">Министерство внутренних дел Российской Федерации</option>
+						<option disabled>---Подразделения центрального аппарата МВД России:</option>
+						<option value="Economy">Главное управление экономической безопасности и противодействия коррупции</option>
+						<option value="CID">Главное управление уголовного розыска</option>
+						<option value="Extremism">Главное управление по противодействию экстремизму</option>
+						<option value="Public_order">Главное управление по обеспечению охраны общественного порядка и координации взаимодействия с органами исполнительной власти субъектов РФ</option>
+						<option value="RTS">Главное управление по обеспечению безопасности дорожного движения</option>
+						<option value="OAD">Организационно-аналитический департамент</option>
+						<option value="Transport">Главное управление на транспорте</option>
+						<option value="Drugs">Главное управление по контролю за оборотом наркотиков</option>
+					</select><br><br>
+				Ф.И.О., Должность:
+					<input type="text" name="reciever">
+			</div>
+			<h3 style="color: red">Заявитель</h3>
+			<div style="padding: 10px; border: 1px solid">
+				<input type="radio" name="complainant" value="natural" checked> Физическое лицо
+				<input type="radio" name="complainant" value="legal"> Юридическое лицо<br><br>
+				Фамилия:<span style="color: red">*</span>
+					<input type="text" name="surname" required><br><br>
+				Имя:<span style="color: red">*</span>
+					<input type="text" name="name" required><br><br>
+				Отчество:
+					<input type="text" name="lastname">
+			</div>
+			<h3 style="color: red">Адрес для ответа</h3>
+			<div style="padding: 10px; border: 1px solid">
+				Адрес электронной почты:<span style="color: red">*</span>
+					<input type="text" name="mail" required>
+					<br><br>
+				Телефон:
+					<input type="text" name="phone">
+			</div>
+			<h3 style="color: red">Текст обращения:*</h3>
+				<textarea name="reason" required></textarea><br>
+			<input type="submit" value="Отправить обращение">
+		</form>
+		* — поля, обязательные для заполнения 
+	</body>
+</html>
