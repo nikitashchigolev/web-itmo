@@ -1,0 +1,42 @@
+body {
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			background-color: yellow;
+			text-align: center;
+			font-size: 100px;
+		}
+		.features {
+			padding-top: 85px;
+			padding-bottom: 75px;
+
+		}
+		.container {
+			width: 980px;
+			margin: 0 auto;
+			margin-top: 25px;
+			padding:0 0;
+
+		}		
+		.features-item {
+			width: 300px;
+			height: 200px;
+			min-height: 90px;
+			margin-right: 40px;
+			float:left;
+			background-color: green;
+		}
+		.features .container::after {
+			display: table;;
+			clear: both;
+			content: "";
+		}
+		.features-item:last-child {
+			margin-right: 0;
+		}
+		footer{
+			background-color: red;
+			text-align: center;
+			font-size: 80px;
+		}
