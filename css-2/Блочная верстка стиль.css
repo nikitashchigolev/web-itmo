@@ -31,10 +31,10 @@ body {
 			display: table;;
 			clear: both;
 			content: "";
-		}
+		} //чтобы контент не выпадал из контейнера
 		.features-item:last-child {
 			margin-right: 0;
-		}
+		} //поскольку блоки не влезают в ряд (им мешает маргин справа) 
 		footer{
 			background-color: red;
 			text-align: center;
